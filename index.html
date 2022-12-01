@@ -116,15 +116,15 @@
           <ul class="work-pic">
             <li class="work-item">
               <img src="./imges/box1.jpg" width="370" alt="людина яка набирає комп'ютерний код" />
-              <p class="work-item text">Десктопні додатки</p>
+              <div class="work-addition"><p class="work-item text">Десктопні додатки</p></div>
             </li>
             <li class="work-item">
               <img src="./imges/box2.jpg" width="370" alt="людина створює дизайн сайту" />
-              <p class="work-item text">Мобільні додатки</p>
+              <div class="work-addition"><p class="work-item text">Мобільні додатки</p></div>
             </li>
             <li class="work-item">
               <img src="./imges/box3.jpg" width="370" alt="людина вибирає колір на планшеті" />
-              <p class="work-item text">Дизайнерські рішення</p>
+              <div class="work-addition"><p class="work-item text">Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
@@ -410,6 +410,24 @@
             </li>
           </ul>
         </div>
+        <form class="footer-field">
+          <div class="field-email">
+            <label for="user-email" class="footer-label"> Підпишіться на розсилку </label>
+            <input
+              type="email"
+              name="footer-email"
+              id="user-email"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+          </div>
+          <button type="submit" class="footer-submit">
+            Підписатися
+            <svg class="icon-sign" width="24px" height="24px">
+              <use href="./imges/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -423,6 +441,45 @@
             <use href="./imges/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form class="form-field">
+          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label for="form-name" class="label-form">Ім'я</label>
+          <div class="feild-icon">
+            <input type="text" name="form-name" id="form-name" class="input-form" />
+            <svg class="icon-form" width="18px" height="18px">
+              <use href="./imges/symbol-defs.svg#icon-person-form"></use>
+            </svg>
+          </div>
+
+          <label for="form-tel" class="label-form">Телефон</label>
+          <div class="feild-icon">
+            <input type="tel" name="form-tel" id="form-tel" class="input-form" />
+            <svg class="icon-form" width="18px" height="18px">
+              <use href="./imges/symbol-defs.svg#icon-phone-form"></use>
+            </svg>
+          </div>
+
+          <label for="form-email" class="label-form">Пошта</label>
+          <div class="feild-icon">
+            <input type="email" name="form-email" id="form-email" class="input-form" />
+            <svg class="icon-form" width="18px" height="18px">
+              <use href="./imges/symbol-defs.svg#icon-email-form"></use>
+            </svg>
+          </div>
+
+          <label for="form-coment" class="label-form">Коментар</label>
+          <textarea
+            name="form-coment"
+            id="form-coment"
+            placeholder="Введіть текст"
+            class="input-coment"
+          ></textarea>
+
+          <label for="checkbox"
+            ><input type="checkbox" name="checkbox" id="checkbox" />Погоджуюся з розсилкою та
+            приймаю <a>Умови договору</a></label
+          >
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
